@@ -11,9 +11,14 @@ import parlai.tasks.wizard_of_internet.constants as CONST
 
 
 DATASET_FILE = build_data.DownloadableFile(
-    'http://parl.ai/downloads/wizard_of_internet/wizard_of_internet.tgz',
-    'wizard_of_internet.tgz',
-    'c2495b13ad00015e431d51738e02d37d2e80c8ffd6312f1b3d273dd908a8a12c',
+    # 원본 코드 
+    # 'http://parl.ai/downloads/wizard_of_internet/wizard_of_internet.tgz',
+    # 'wizard_of_internet.tgz',
+    # 'c2495b13ad00015e431d51738e02d37d2e80c8ffd6312f1b3d273dd908a8a12c',
+    # 수정된 코드 
+    'https://github.com/daje0601/dataset/raw/main/translation_wizard_of_internet.zip',
+    'translation_wizard_of_internet.zip',
+    'f81eac8868a226fcdb4b287a8cc9b3c47bcef896613057e5c3928dd4308bc45a'
 )
 
 
