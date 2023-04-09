@@ -1,0 +1,15 @@
+dataset_dir: "/home/kds/workspace/gpt2_chatbot_add_special_token"
+train_frac: 0.90 # ratio of the conversations to be included in the train set
+model_name: "kykim/gpt3-kor-small_based_on_gpt2" # name of the model for tokenizer and transformer
+seed: 8459 # random seed
+lr: 0.00002 # learning rate
+warmup_ratio: 0.1 # ratio of warmup steps to the total training steps
+batch_size: 64 # batch size
+num_epochs: 20 # number of total epochs
+max_len: 100 # maximum length of input sequence
+max_history: 5 # maximum number of dialogue histories to include
+models_dir: "/home/kds/workspace/gpt2_chatbot_add_special_token/complete_special_token_model"
+stop_command: "bye" # command to stop the conversation when inferencing
+top_p: 0.9 # top p
+top_k: 50 # top k
+temperature: 0.7 # random
